@@ -12,12 +12,29 @@ body {
 .quiz {
   width: 55rem;
   margin: 20px auto;
+  position: relative;
 }
 
 @media (max-width: 767px) {
   .quiz {
     width: 90%;
   }
+}
+
+.quiz .pop-up {
+  position: absolute;
+  width: 60%;
+  padding: 15px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border-radius: 6px;
+  transition: .4s;
 }
 
 .quiz h3 {
