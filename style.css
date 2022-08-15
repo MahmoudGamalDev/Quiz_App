@@ -34,7 +34,7 @@ body {
   transform: translate(-50%, -50%);
   z-index: 2;
   border-radius: 6px;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .quiz h3 {
@@ -102,4 +102,29 @@ label {
   outline: none;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.result {
+  display: none;
+  background-color: white;
+  width: 20rem;
+  margin: 100px auto;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.result span:last-child {
+  color: blue;
+  cursor: pointer;
+}
+
+.result.failed span:first-child {
+  color: red;
+}
+
+.result.passed span:first-child {
+  color: rgb(21, 217, 21);
 }
