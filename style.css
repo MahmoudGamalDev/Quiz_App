@@ -88,7 +88,7 @@ label {
   color: #e9e9ea;
 }
 
-.footer .left span {
+.footer .left > span {
   padding: 5px;
 }
 

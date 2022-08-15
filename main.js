@@ -5,6 +5,10 @@ let inputs = document.querySelectorAll("input");
 let submitButton = document.querySelector(".submit");
 let popUp = document.querySelector(".pop-up");
 let result = document.querySelector(".result");
+let quesNumber = document.querySelector(".question-number");
+let timer = document.querySelector(".counter");
+let minutes = document.querySelector(".counter span:first-child").textContent;
+let seconds = document.querySelector(".counter span:last-child").textContent;
 
 // Helpers
 let quesIndex = 0;
@@ -17,8 +21,9 @@ function getQuestions() {
         if (this.readyState === 4 && this.status === 200) {
 
             let quesObj = JSON.parse(myRequest.responseText);
-
             addQuestions(quesObj[quesIndex]);
+            quesNumber.textContent = `Q${1}/${quesObj.length}`;
+            countDown();
 
             submitButton.onclick = function () {
                 let answered = false;
@@ -38,6 +43,7 @@ function getQuestions() {
                     notAnswered();
                 }
 
+                quesIncrement(quesObj);
             }
         }
     };
@@ -72,9 +78,6 @@ function quesAnswered(response) {
 
     if (quesIndex < response.length) {
         addQuestions(response[quesIndex]);
-        for (let i = 0; i < 4; i++) {
-            inputs[i].checked = false;
-        }
     } else {
         giveResult(response.length);
     }
@@ -103,4 +106,30 @@ function giveResult(quesLength) {
         location.reload();
     }
     );
+}
+
+function quesIncrement(quizObj) {
+    quesNumber.textContent = `Q${quesIndex + 1}/${quizObj.length}`;
+
+}
+
+function countDown() {
+    let minsHandler = "60";
+    let counter = setInterval(() => {
+        if (seconds !== "00") {
+            seconds -= 1;
+            seconds = seconds < 10 ? `0${seconds}` : seconds;
+            timer.textContent = `${minutes}:${seconds}`;
+        } else {
+            if (minutes !== "00") {
+                minsHandler -= 1;
+                minutes = minsHandler;
+                minutes = minutes < 10 ? `0${minutes}` : minutes;
+                timer.textContent = `${minutes}:${seconds}`;
+            } else {
+                clearInterval(counter);
+                timer.innerHTML = "<span>01</span>:<span>30</span>";                
+            }
+        }
+    }, 1000);
 }
