@@ -17,24 +17,8 @@ body {
 
 @media (max-width: 767px) {
   .quiz {
-    width: 90%;
+    width: 95%;
   }
-}
-
-.quiz .pop-up {
-  position: absolute;
-  width: 60%;
-  padding: 15px;
-  background-color: red;
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-  top: -100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  border-radius: 6px;
-  transition: 0.4s;
 }
 
 .quiz h3 {
@@ -73,6 +57,12 @@ label {
   position: relative;
   top: -5px;
   cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  label {
+    font-size: 8px;
+  }
 }
 
 .footer {
