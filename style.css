@@ -9,10 +9,52 @@ body {
   background-color: rgb(61, 60, 60);
 }
 
+.choose-quiz {
+  background-color: #333;
+  width: 45%;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+
+.choose-quiz h1 {
+  color: white;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.choose-quiz .tests {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 15px;
+}
+
+.choose-quiz .tests img {
+  width: 10rem;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .choose-quiz {
+    width: 90%;
+    text-align: center;
+  }
+  .choose-quiz .tests {
+    flex-direction: column;
+  }
+}
+
 .quiz {
+  display: none;
   width: 55rem;
   margin: 20px auto;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
 }
 
 @media (max-width: 767px) {
@@ -97,13 +139,19 @@ label {
 .result {
   display: none;
   background-color: white;
-  width: 20rem;
+  width: 30rem;
   margin: 100px auto;
   padding: 20px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   border-radius: 6px;
+}
+
+@media (max-width:576px) {
+  .result {
+    width: 90%;
+  }
 }
 
 .result span:last-child {

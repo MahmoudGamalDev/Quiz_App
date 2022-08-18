@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Using an attribute selector, how would you select an <a> element with a “title” attribute?",
+    "answer_1": "a[title]{…}",
+    "answer_2": "a > title {…}",
+    "answer_3": "a.title {…}",
+    "answer_4": "a=title {…}",
+    "right_answer": "a[title]{…}"
+  },
+  {
+    "title": "What is the line-height property primarily used for?",
+    "answer_1": "to control the height of the space between two lines of content",
+    "answer_2": "to control the height of the space between heading elements",
+    "answer_3": "to control the height of the character size",
+    "answer_4": "to control the width of the space between characters",
+    "right_answer": "to control the height of the space between two lines of content"
+  },
+  {
+    "title": "Three of these choices are true about class selectors. Which is NOT true?",
+    "answer_1": "Multiple classes can be used within the same element.",
+    "answer_2": "The same class can be used multiple times per page.",
+    "answer_3": "Class selectors with a leading period",
+    "answer_4": "Classes can be used multiple times per page but not within the same element.",
+    "right_answer": "Classes can be used multiple times per page but not within the same element."
+  },
+  {
+    "title": "Classes can be used multiple times per page but not within the same element.",
+    "answer_1": "the closest element with position: relative",
+    "answer_2": "the viewport",
+    "answer_3": "the parent element",
+    "answer_4": "the wrapper element",
+    "right_answer": "the viewport"
+  },
+  {
+    "title": "When using media queries, media types are used to target a device category. Which choice lists current valid media types?",
+    "answer_1": "print, screen, aural",
+    "answer_2": "print, screen, television",
+    "answer_3": "print, screen, speech",
+    "answer_4": "print, speech, device",
+    "right_answer": "print, screen, speech"
+  },
+  {
+    "title": "How would you make the first letter of every paragraph on the page red?",
+    "answer_1": "p::first-letter { color: red; }",
+    "answer_2": "p:first-letter { color: red; }",
+    "answer_3": "first-letter::p { color: red; }",
+    "answer_4": "first-letter:p { color: red; }",
+    "right_answer": "p::first-letter { color: red; }"
+  },
+  {
+    "title": "Which of these would give a block element rounded corners?",
+    "answer_1": "corner-curve: 10px",
+    "answer_2": "border-corner: 10px",
+    "answer_3": "border-round: 10px",
+    "answer_4": "border-radius: 10px",
+    "right_answer": "border-radius: 10px"
+  },
+  {
+    "title": "Which of the following is not a valid color value?",
+    "answer_1": "color: #000",
+    "answer_2": "color: rgb(0,0,0)",
+    "answer_3": "color: #000000",
+    "answer_4": "color: 000000",
+    "right_answer": "color: 000000"
+  },
+  {
+    "title": "Which type of declaration will take precedence?",
+    "answer_1": "any declarations in user-agent stylesheets",
+    "answer_2": "important declarations in user stylesheets",
+    "answer_3": "normal declarations in author stylesheets",
+    "answer_4": "important declarations in author stylesheets",
+    "right_answer": "important declarations in user stylesheets"
+  }
+]

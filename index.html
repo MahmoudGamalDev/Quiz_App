@@ -1,27 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Quizzes</title>
-    <link rel="stylesheet" href="choose_quiz.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <!-- Choose Quiz -->
     <div class="choose-quiz">
-        <h1>Choose Quiz</h1>
-        <div class="quizzes">
-            <a href="quiz.html" target="_blank">
-                <img src="./imgs/icons8-html-5.svg" alt="html">
-            </a>
-            <a href="quiz.html" target="_blank">
-                <img src="./imgs/icons8-css3.svg" alt="html">
-            </a>
-            <a href="quiz.html" target="_blank">
-                <img src="./imgs/icons8-javascript.svg" alt="html">
-            </a>
+      <h1>Choose Quiz</h1>
+      <div class="tests">
+        <div>
+          <img
+            src="./imgs/icons8-html-5.svg"
+            alt="html"
+            data-quiz="./quizzes/html_quiz.json"
+            data-name="HTML"
+          />
         </div>
+        <div>
+          <img
+            src="./imgs/icons8-css3.svg"
+            alt="html"
+            data-quiz="./quizzes/css_quiz.json"
+            data-name="CSS"
+          />
+        </div>
+        <div>
+          <img
+            src="./imgs/icons8-javascript.svg"
+            alt="html"
+            data-quiz="./quizzes/js_quiz.json"
+            data-name="JS"
+          />
+        </div>
+      </div>
     </div>
-    <script src="main.js"></script>
-</body>
+    <!-- Quiz -->
+    <div class="quiz">
+      <h3></h3>
+      <div class="question">
+        <p></p>
+      </div>
+      <div class="answers">
+        <div class="answer">
+          <input type="radio" id="answer_1" name="answer" />
+          <label for="answer_1"></label>
+        </div>
+        <div class="answer">
+          <input type="radio" id="answer_2" name="answer" />
+          <label for="answer_2"></label>
+        </div>
+        <div class="answer">
+          <input type="radio" id="answer_3" name="answer" />
+          <label for="answer_3"></label>
+        </div>
+        <div class="answer">
+          <input type="radio" id="answer_4" name="answer" />
+          <label for="answer_4"></label>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="left">
+          <span class="question-number">Q1/9</span>
+          <span class="counter"></span>
+        </div>
+        <div class="right">
+          <button class="submit">Submit answer</button>
+        </div>
+      </div>
+    </div>
+    <!-- Result -->
+    <div class="result"></div>
+    <script src="main.js" type="module"></script>
+  </body>
 </html>

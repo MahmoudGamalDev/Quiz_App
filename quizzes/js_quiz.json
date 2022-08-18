@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Which operator returns true if the two compared values are not equal?",
+    "answer_1": "<>",
+    "answer_2": "~",
+    "answer_3": "==!",
+    "answer_4": "!==",
+    "right_answer": "!=="
+  },
+  {
+    "title": "Which statement creates a new Person object called “student”?",
+    "answer_1": "var student = new Person();",
+    "answer_2": "var student = construct Person;",
+    "answer_3": "var student = Person();",
+    "answer_4": "var student = construct Person();",
+    "right_answer": "var student = new Person();"
+  },
+  {
+    "title": "Which statement creates a new function called discountPrice?",
+    "answer_1": "let discountPrice = function(price) { return price * 0.85; };",
+    "answer_2": "let discountPrice(price) { return price * 0.85; };",
+    "answer_3": "let function = discountPrice(price) { return price * 0.85; };",
+    "answer_4": "discountPrice = function(price) { return price * 0.85; };",
+    "right_answer": "let discountPrice = function(price) { return price * 0.85; };"
+  },
+  {
+    "title": "Which method converts JSON data to a JavaScript object?",
+    "answer_1": "JSON.fromString();",
+    "answer_2": "JSON.parse()",
+    "answer_3": "JSON.toObject()",
+    "answer_4": "JSON.stringify()",
+    "right_answer": "JSON.parse()"
+  },
+  {
+    "title": "When would you use a conditional statement?",
+    "answer_1": "When you want to reuse a set of statements multiple times.",
+    "answer_2": "When you want your code to choose between multiple options.",
+    "answer_3": "When you want to group data together.",
+    "answer_4": "When you want to loop through a group of statement.",
+    "right_answer": "When you want your code to choose between multiple options."
+  },
+  {
+    "title": "Which Object method returns an iterable that can be used to iterate over the properties of an object?",
+    "answer_1": "Object.get()",
+    "answer_2": "Object.loop()",
+    "answer_3": "Object.each()",
+    "answer_4": "Object.keys()",
+    "right_answer": "Object.keys()"
+  },
+  {
+    "title": "Which statement sets the Person constructor as the parent of the Student constructor in the prototype chain?",
+    "answer_1": "Student.parent = Person;",
+    "answer_2": "Student.prototype = new Person();",
+    "answer_3": "Student.prototype = Person;",
+    "answer_4": "Student.prototype = Person();",
+    "right_answer": "Student.prototype = new Person();"
+  },
+  {
+    "title": "Which of the following values is not a Boolean false?",
+    "answer_1": "Boolean(0)",
+    "answer_2": "Boolean(“”)",
+    "answer_3": "Boolean(NaN)",
+    "answer_4": "Boolean(“false”)",
+    "right_answer": "Boolean(“false”)"
+  },
+  {
+    "title": "Which statement is true about the “async” attribute for the HTML script tag?",
+    "answer_1": "It can be used for both internal and external JavaScript code.",
+    "answer_2": "It can be used only for internal JavaScript code.",
+    "answer_3": "It can be used only for internal or external JavaScript code that exports a promise.",
+    "answer_4": "It can be used only for external JavaScript code.",
+    "right_answer": "It can be used only for external JavaScript code."
+  }
+]

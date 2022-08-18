@@ -1,4 +1,5 @@
 let quiz = document.querySelector(".quiz");
+let quizName = document.querySelector(".quiz h3");
 let question = document.querySelector(".question p");
 let labels = document.querySelectorAll("label");
 let inputs = document.querySelectorAll("input");
@@ -12,6 +13,19 @@ let timer = document.querySelector(".counter");
 let quesIndex = 0;
 let score = 0;
 let counter;
+
+let tests = document.querySelectorAll(".tests div");
+let chosenQuiz;
+
+tests.forEach((test) => {
+  test.onclick = (e) => {
+    e.target.parentElement.parentElement.parentElement.style.display = "none";
+    quiz.style.display = "block";
+    chosenQuiz = e.target.dataset.quiz;
+    quizName.textContent = `${e.target.dataset.name} assessment`;
+    getQuestions();
+  };
+});
 
 function getQuestions() {
   let myRequest = new XMLHttpRequest();
@@ -48,12 +62,10 @@ function getQuestions() {
       };
     }
   };
-  
-  myRequest.open("GET", "html_quiz.json", true);
+
+  myRequest.open("GET", chosenQuiz, true);
   myRequest.send();
 }
-
-getQuestions();
 
 function addQuestions(quizObj) {
   question.textContent = quizObj.title;
