@@ -11,48 +11,39 @@ body {
 
 .choose-quiz {
   background-color: #333;
-  width: 45%;
-  border-radius: 5px;
+  width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -70%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 4px;
 }
 
 .choose-quiz h1 {
   color: white;
-  padding-top: 15px;
-  text-align: center;
 }
 
-.choose-quiz .tests {
-  display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 15px;
+.choose-quiz div {
+  padding: 10px;
 }
 
-.choose-quiz .tests img {
-  width: 10rem;
+.choose-quiz .tests div img {
+  width: 6rem;
   max-width: 100%;
   cursor: pointer;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .choose-quiz {
-    width: 90%;
-    height: 50vh;
-    text-align: center;
-    transform: translate(-50%, -70%);
+    width: 55rem;
   }
   .choose-quiz .tests {
-    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
   }
-
-  .choose-quiz .tests div {
-    margin-bottom: 10px;
-  }
-  .choose-quiz .tests img {
-    width: 6rem;
+  .choose-quiz .tests div img {
+    width: 8rem;
   }
 }
 
