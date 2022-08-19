@@ -37,7 +37,7 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .choose-quiz {
     width: 90%;
     height: 50vh;
@@ -110,7 +110,7 @@ label {
   cursor: pointer;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   label {
     font-size: 10px;
   }
@@ -157,7 +157,7 @@ label {
   border-radius: 6px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .result {
     width: 90%;
   }
