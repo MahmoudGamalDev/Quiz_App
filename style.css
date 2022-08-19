@@ -37,6 +37,7 @@ body {
 @media (min-width: 768px) {
   .choose-quiz {
     width: 55rem;
+    transform: translate(-50%, -70%);
   }
   .choose-quiz .tests {
     display: flex;
