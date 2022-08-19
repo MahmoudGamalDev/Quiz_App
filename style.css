@@ -37,7 +37,7 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .choose-quiz {
     width: 90%;
     height: 50vh;
