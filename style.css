@@ -40,11 +40,19 @@ body {
 @media (max-width: 576px) {
   .choose-quiz {
     width: 90%;
+    height: 50vh;
     text-align: center;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -70%);
   }
   .choose-quiz .tests {
     flex-direction: column;
+  }
+
+  .choose-quiz .tests div {
+    margin-bottom: 10px;
+  }
+  .choose-quiz .tests img {
+    width: 6rem;
   }
 }
 
@@ -149,7 +157,7 @@ label {
   border-radius: 6px;
 }
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
   .result {
     width: 90%;
   }
